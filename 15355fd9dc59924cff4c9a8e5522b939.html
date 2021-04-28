@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google" content="notranslate" />
+<meta name="msapplication-config" content="none" />
+<title>Sendinblue</title>
+<link rel="icon" href="https://account.sendinblue.com/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://account.sendinblue.com/apple-touch-icon.png">
+
+<link rel="stylesheet" href="https://static.sendinblue.com/styles/bootstrap.min.css" />
+<link rel="stylesheet" href="https://static.sendinblue.com/styles/font-awesome.min.css" />
+<link rel="stylesheet" href="https://account.sendinblue.com/public/assets/styles/paymentfont.min.css" />
+<link rel="stylesheet" href="https://account.sendinblue.com/public/assets/styles/datepicker.css" />
+<link rel="stylesheet" href="https://account.sendinblue.com/public/assets/styles/flag-icon.css" />
+<link rel="stylesheet" href="https://account.sendinblue.com/public/assets/styles/remote-production.css?v=1618986910" />
+
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://assets.sendinblue.com/font/Publico/Latin/medium/4e7300fa7617a56e5717a8d26aa1c74a.woff">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/header/47ed33ae7b2f78e40511.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/navigation/ac6c9b895fe26b7e1312.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/content/a9bcc0d34815888db2b0.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/menu/f0915d7066093235eb2f.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/sidebar/05ea2d868f4495547b72.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/page/8d6c3f74a7c0bcb2ce7c.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/icon/9b3a6f23d5736830e4c0.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/organization/5d4212b6e6c2acfc7d25.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/24e276133966ea67f3f9.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/toggletip/0aedb00bf4af6ef0f254.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/notification/1a257f20e11e5a7e9fa2.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/icon/9b3a6f23d5736830e4c0.css">
+<link rel="stylesheet" href="https://account.sendinblue.com/public/assets/styles/style.css?v=1618986910" />
+<script src="https://assets.sendinblue.com/component/collapsible/b6dc24dc8ae347fc8e59.js"></script>
+
+<script src="https://account.sendinblue.com/public/assets/js/dependencies/sendinblue_ma_track.js"></script>
+<script type="text/javascript">
+            var _user_id = ''; // TODO: Set to the user's ID, username, email address, or '' if not yet known
+            var _session_id = '';
+            var _sift = _sift || []; _sift.push(['_setAccount', '8b2c928752']); _sift.push(['_setUserId', _user_id]); _sift.push(['_setSessionId', _session_id]); _sift.push(['_trackPageview']); (function() { function ls()
+            { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.siftscience.com/s.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); }
+
+                if (window.attachEvent)
+                { window.attachEvent('onload', ls); }
+
+                else { window.addEventListener('load', ls, false); }})();
+        </script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/955371798/?value=1.00&amp;currency_code=EUR&amp;label=FI9PCN7Gq1gQlqLHxwM&amp;guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
+<script>
+        $(document).ready(function() {
+            $('iframe').each(function() {
+                if ($(this).attr("name") == 'google_conversion_frame') {
+                    $(this).css("display","none");
+                }
+            });
+        });
+    </script>
+
+<script type='text/javascript'>
+        var _vis_opt_account_id = 63788;
+        var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+        document.write('<s' + 'cript src="' + _vis_opt_protocol +
+        'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='
+        +encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
+    </script>
+<script type='text/javascript'>
+        if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol +
+        'd5phz18u4wuww.cloudfront.net/vis_opt.js" type="text/javascript">' + '<\/s' + 'cript>'); }
+        // if your site already has jQuery 1.4.2, replace vis_opt.js with vis_opt_no_jquery.js above
+    </script>
+<script type='text/javascript'>
+        if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
+            _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
+        }
+    </script>
+
+
+<script type='text/javascript'>
+    var _vwo_code=(function(){
+    var account_id=63788,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    // DO NOT EDIT BELOW THIS LINE
+    f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+    </script>
+
+</head>
+<body data-ng-app="app" class="page__body">
+<script type="text/javascript"> 
+    var dataLayer = [];
+    function gtmCall(gtmData) {
+        if (window['google_tag_manager']) {
+            dataLayer.push(gtmData);
+        }else {
+            if(gtmData.eventCallback) {
+                gtmData.eventCallback();
+                delete gtmData.eventCallback;
+            }
+            dataLayer.push(gtmData);
+        }
+    }
+
+    isFirstChange = '';
+       gtmCall({
+          "application": "account",
+          "userType":"Customer",
+          "name": "snow ww",
+          "email": "paolasnow3000@gmail.com",
+          "uidsib": "",
+          "fingsib": "",
+          "userid": "3696473",
+          "language": "en",
+          "account_id": "6087783bd850d626987e5269",
+                    'plan' : "Free"
+       });
+ /**
+ * @description: function push when email send for validation
+ */
+   function gtmEmailValidation(){  
+        gtmCall({
+        "event": "analyticsEvent",
+        "eventCategory":"Account",
+        "eventAction":"Validation",
+        "eventLabel":"Email"
+    });
+  }
+
+/**
+ * @description: function used to redirect
+ */
+    function gtmClickOnLink(targetUrl,event,eventCategory,eventAction,eventLabel){
+        gtmCall({
+        "event": event,
+        "eventCategory": eventCategory,
+        "eventAction": eventAction,
+        "eventLabel": eventLabel,
+            "eventCallback": function(){
+                location.href = targetUrl;
+            },
+                 eventTimeout:2000 // to make sure redirection is not blocked in case of any issue
+            });
+        }
+    /**
+ * @description: function used to redirect and open link on new tab
+ */
+    function gtmClickOnLinkNewTab(targetUrl,event,eventCategory,eventAction,eventLabel){
+        gtmCall({
+        "event": event,
+        "eventCategory": eventCategory,
+        "eventAction": eventAction,
+        "eventLabel": eventLabel
+            });
+        }    
+        
+        
+ /**
+ * @description: GTM comman function
+ */          
+    function gtmPush(event,eventCategory,eventAction,eventLabel){
+        gtmCall({
+            "event": event,
+            "eventCategory":eventCategory,
+            "eventAction":eventAction,
+            "eventLabel":eventLabel
+        });
+    }
+
+
+    function gtmPushWithDeclaredContacts(event,eventCategory,eventAction,eventLabel, nbContactsDeclared) {
+        gtmCall({
+            "event": event,
+            "eventCategory":eventCategory,
+            "eventAction":eventAction,
+            "eventLabel":eventLabel,
+            "eventValue": nbContactsDeclared
+        });
+    }
+
+function apiGtmRightClick(){
+    gtmPush('analyticsEvent','API','Get','Key');
+} 
+    
+</script>
+<script>
+    function gtmClickOnTab(tab){
+        gtmCall({
+            "event": "analyticsEvent",
+            "eventCategory":"Tab",
+            "eventAction":"View",
+            "eventLabel":"tab-senders-" + tab
+        });
+    }
+    window.onload = function() {
+            gtmClickOnTab(0);
+    };
+    
+    $(function(){
+       //senders page push data on tab click
+       $('body').on('click','.gtm-tab',function(){
+           var tab = $(this).attr('data-gtm-tab');
+           gtmClickOnTab(tab);
+       });
+
+    });
+</script>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N6WQB9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6WQB9');</script>
+
+
+<nav class="header page__header ">
+<a href="https://my.sendinblue.com/" class="topnav__control header__organization" rel="home">
+<span class="topnav__label">
+<svg viewBox="0 0 512 512" class="organization__logo">
+<title>SendinBlue</title>
+<path d="M473.722 127.464c-18.027-31.901-48.272-55.215-83.865-64.647a142.257 142.257 0 0 0-22.471-3.885C342.065 22.06 300.026 0 255.08 0c-44.944 0-86.983 22.06-112.304 58.932C98.157 63.142 58.4 88.68 36.24 127.365a139.082 139.082 0 0 0-5.316 127.402 139.674 139.674 0 0 0 5.316 127.104c18.053 31.879 48.287 55.184 83.865 64.647a130.245 130.245 0 0 0 22.973 3.885c25.261 36.958 67.322 59.087 112.304 59.087 44.983 0 87.043-22.13 112.305-59.087 44.638-4.161 84.414-29.71 106.536-68.433a138.588 138.588 0 0 0 5.317-127.402 139.379 139.379 0 0 0-5.818-127.104zm-33.861 20.14c10.8 18.89 14.88 40.769 11.6 62.186a140.27 140.27 0 0 0-24.015-17.568c-31.777-18.423-69.787-23.497-105.428-14.074-21.674 5.722-41.612 16.51-58.107 31.442-6.093-38.506 12.271-76.783 46.404-96.722 21.403-12.61 47.09-16.21 71.235-9.981 24.815 6.533 45.86 22.673 58.31 44.717zM254.813 44.955c21.153.117 41.612 7.52 57.892 20.948a140.215 140.215 0 0 0-27.272 12.04c-50.843 30.193-76.605 89.302-63.996 146.832-35.486-14.33-58.666-48.648-58.581-86.729-.22-50.807 40.858-92.26 91.957-92.797v-.294zM71.075 149.893c10.763-18.148 27.595-32.249 47.752-40.003a134.308 134.308 0 0 0-3.455 29.342c-.174 58.952 39.193 111.274 97.433 129.495-10.376 8.36-22.506 14.466-35.56 17.898-24.037 6.26-49.683 2.91-71.118-9.291-45.903-26.087-61.706-82.724-35.56-127.441h.508zm-.458 211.901c-10.82-18.85-14.87-40.716-11.503-62.094a144.971 144.971 0 0 0 23.922 17.57c21.096 12.2 45.136 18.646 69.627 18.668a142.451 142.451 0 0 0 35.831-4.692c21.69-5.7 41.64-16.493 58.125-31.446 6.072 38.511-12.239 76.793-46.316 96.835-21.417 12.59-47.102 16.188-71.256 9.983-25.019-6.331-46.312-22.417-58.939-44.524l.51-.3zm185.12 102.546c-21.194-.131-41.677-7.601-57.917-21.121a133.872 133.872 0 0 0 27.284-11.832c50.865-30.16 76.638-89.204 64.024-146.672 41.267 16.713 65.055 59.88 56.975 103.392-8.08 43.51-45.809 75.421-90.366 76.428v-.195zm174.56-104.781c-10.365 18.23-26.73 32.368-46.35 40.041a132.315 132.315 0 0 0 3.353-29.37c.138-58.999-38.063-111.355-94.575-129.62a91.453 91.453 0 0 1 34.516-17.915c23.401-6.086 48.285-2.557 69.033 9.79 44.263 26.268 59.358 82.778 34.024 127.368v-.294z" />
+</svg>
+</span>
+</a>
+<div class="topnav_secondary">
+<div class="collapsible">
+<button type="button" class="topnav__control collapsible__trigger trigger_hidden" aria-expanded="false" aria-haspopup="true">
+<span class="topnav__label">
+<svg viewBox="0 0 512 512" class="icon icon_standalone topnav__icon">
+<path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path>
+</svg>
+</button>
+<nav class="topnav_nested menu collapsible__content collapsible__content_touchy">
+<a href="https://resources.sendinblue.com/en" target="_blank" class="menu__control">
+<svg viewBox="0 0 512 512" class="icon menu__icon">
+<path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path>
+</svg>Resources </a>
+<a href="https://developers.sendinblue.com/" target="_blank" class="menu__control">
+<svg viewBox="0 0 640 512" class="icon menu__icon">
+<path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path>
+</svg>API Documentation </a>
+</nav>
+</div>
+<div class="collapsible" style="max-width: 20ch; min-width: 0;">
+<button type="button" class="topnav__control collapsible__trigger" aria-expanded="false">
+<span class="topnav__label" ng-non-bindable>pucmm</span>
+</button>
+<nav class="topnav_nested menu collapsible__content collapsible__content_touchy">
+<a href="https://account.sendinblue.com/profile" class="menu__control">
+<svg viewBox="0 0 448 512" class="icon menu__icon">
+<path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+</svg>paolasnow3000@gmail.com </a>
+<a href="https://account.sendinblue.com/pricing" class="menu__control">
+<svg viewBox="0 0 576 512" class="icon menu__icon">
+<path d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"></path>
+</svg>My Plan </a>
+<hr class="menu__divider">
+<a href="https://account.sendinblue.com/advanced/plugins/" class="menu__control">
+<svg viewBox="0 0 384 512" class="icon menu__icon">
+<path d="M256 144V32c0-17.673 14.327-32 32-32s32 14.327 32 32v112h-64zm112 16H16c-8.837 0-16 7.163-16 16v32c0 8.837 7.163 16 16 16h16v32c0 77.406 54.969 141.971 128 156.796V512h64v-99.204c73.031-14.825 128-79.39 128-156.796v-32h16c8.837 0 16-7.163 16-16v-32c0-8.837-7.163-16-16-16zm-240-16V32c0-17.673-14.327-32-32-32S64 14.327 64 32v112h64z"></path>
+</svg>Plugins </a>
+<a href="https://account.sendinblue.com/senders" class="menu__control">
+<svg viewBox="0 0 512 512" class="icon menu__icon">
+<path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+</svg>Senders & IP </a>
+<a href="https://account.sendinblue.com/advanced/api" class="menu__control">
+<svg viewBox="0 0 512 512" class="icon menu__icon">
+<path d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"></path>
+</svg>SMTP & API </a>
+<a href="https://app.sendinblue.com/account/organization/invited/users" class="menu__control">
+<svg viewBox="0 0 640 512" class="icon menu__icon">
+<path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path>
+</svg>Users </a>
+<a href="https://app.sendinblue.com/account/zendesk-support" target="_blank" class="menu__control">
+<svg viewBox="0 0 512 512" class="icon menu__icon">
+<path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm173.696 119.559l-63.399 63.399c-10.987-18.559-26.67-34.252-45.255-45.255l63.399-63.399a218.396 218.396 0 0 1 45.255 45.255zM256 352c-53.019 0-96-42.981-96-96s42.981-96 96-96 96 42.981 96 96-42.981 96-96 96zM127.559 82.304l63.399 63.399c-18.559 10.987-34.252 26.67-45.255 45.255l-63.399-63.399a218.372 218.372 0 0 1 45.255-45.255zM82.304 384.441l63.399-63.399c10.987 18.559 26.67 34.252 45.255 45.255l-63.399 63.399a218.396 218.396 0 0 1-45.255-45.255zm302.137 45.255l-63.399-63.399c18.559-10.987 34.252-26.67 45.255-45.255l63.399 63.399a218.403 218.403 0 0 1-45.255 45.255z"></path>
+</svg>Support & tickets </a>
+<a href="https://app.sendinblue.com/account/security/two-factor-authentication" class="menu__control">
+<svg viewBox="0 0 512 512" class="icon menu__icon">
+<path fill="currentColor" d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z"></path>
+</svg>
+Security </a>
+<hr class="menu__divider">
+<a class="menu__control" href="https://app.sendinblue.com/account/localization">
+<svg viewBox="0 0 496 512" class="icon menu__icon">
+<path d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z"></path>
+</svg>Select your language </a>
+<a href="https://app.sendinblue.com/account/logout" class="menu__control">
+<svg viewBox="0 0 512 512" class="icon menu__icon">
+<path d="M180 448H96c-53 0-96-43-96-96V160c0-53 43-96 96-96h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H96c-17.7 0-32 14.3-32 32v192c0 17.7 14.3 32 32 32h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm117.9-303.1l77.6 71.1H184c-13.3 0-24 10.7-24 24v32c0 13.3 10.7 24 24 24h191.5l-77.6 71.1c-10.1 9.2-10.4 25-.8 34.7l21.9 21.9c9.3 9.3 24.5 9.4 33.9.1l152-150.8c9.5-9.4 9.5-24.7 0-34.1L353 88.3c-9.4-9.3-24.5-9.3-33.9.1l-21.9 21.9c-9.7 9.6-9.3 25.4.7 34.6z"></path>
+</svg>Logout </a>
+</nav>
+</div>
+</div>
+<div class="topnav_primary">
+<a href="https://my.sendinblue.com/camp/lists/email" class="topnav__control">Campaigns</a>
+<a href="https://automation.sendinblue.com/" class="topnav__control">Automation</a>
+<a href="https://app-smtp.sendinblue.com/" class="topnav__control">Transactional</a>
+<a href="https://my.sendinblue.com/users/list" class="topnav__control">Contacts</a>
+<a class="topnav__control" href="https://app.sendinblue.com/account/apps">
+<svg class="icon icon_standalone topnav__icon" viewBox="0 0 384 512">
+<path d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z"></path>
+</svg>
+</a>
+</div>
+
+</nav>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="modal-change-lang">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content white-bg">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Select your language</h4>
+</div>
+<div class="modal-body" data-ng-controller="changeLangController">
+<ul>
+<li rel="fr"><a href="javascript:void(0)" ng-click="changeLang('fr')">Français</a></li>
+<li rel="en"><a href="javascript:void(0)" ng-click="changeLang('en')">English</a></li>
+<li rel="es"><a href="javascript:void(0)" ng-click="changeLang('es')">Español</a></li>
+<li rel="it"><a href="javascript:void(0)" ng-click="changeLang('it')">Italiano</a></li>
+<li rel="pt"><a href="javascript:void(0)" ng-click="changeLang('pt')">Português</a></li>
+<li rel="de"><a href="javascript:void(0)" ng-click="changeLang('de')">Deutsch</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="page__strut" data-ng-class="{'sidebar-collapsed':sidebar_collapsed}">
+
+<button type="button" class="page__sidebar-toggler collapsible__trigger" aria-controls="sidebar">
+<span class="hamburger">
+<span class="hamburger__bun"></span>
+<span class="hamburger__steak"></span>
+<span class="hamburger__bun"></span>
+</span>
+</button>
+
+<aside class="sidebar page__sidebar collapsible__content" id="sidebar">
+<nav class="sidebar__section">
+<a href="https://account.sendinblue.com/pricing" class="sidenav__control">
+<svg viewBox="0 0 576 512" class="icon sidenav__icon">
+<path d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"></path>
+</svg>My Plan </a>
+<a href="https://app.sendinblue.com/account/profile/" class="sidenav__control">
+<svg viewBox="0 0 448 512" class="icon sidenav__icon">
+<path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+</svg>My Profile </a>
+<a href="https://account.sendinblue.com/senders" onclick="javascript:gtmClickOnLink(this.href,'analyticsEvent','Tab','View','tab-senders-0')" class="sidenav__control sidenav__control_active">
+<svg viewBox="0 0 512 512" class="icon sidenav__icon">
+<path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+</svg>Senders & IPs </a>
+<a href="https://account.sendinblue.com/advanced/plugins/" class="sidenav__control">
+<svg viewBox="0 0 384 512" class="icon sidenav__icon">
+<path d="M256 144V32c0-17.673 14.327-32 32-32s32 14.327 32 32v112h-64zm112 16H16c-8.837 0-16 7.163-16 16v32c0 8.837 7.163 16 16 16h16v32c0 77.406 54.969 141.971 128 156.796V512h64v-99.204c73.031-14.825 128-79.39 128-156.796v-32h16c8.837 0 16-7.163 16-16v-32c0-8.837-7.163-16-16-16zm-240-16V32c0-17.673-14.327-32-32-32S64 14.327 64 32v112h64z"></path>
+</svg>Plugins </a>
+<a placement="right" class="sidenav__control " href="https://account.sendinblue.com/advanced/api" type="button"><svg viewBox="0 0 512 512" class="icon sidenav__icon"><path d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"></path>
+</svg> SMTP & API</a>
+<a href="https://app.sendinblue.com/account/zendesk-support" class="sidenav__control" target="_blank">
+<svg viewBox="0 0 512 512" class="icon sidenav__icon">
+<path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm173.696 119.559l-63.399 63.399c-10.987-18.559-26.67-34.252-45.255-45.255l63.399-63.399a218.396 218.396 0 0 1 45.255 45.255zM256 352c-53.019 0-96-42.981-96-96s42.981-96 96-96 96 42.981 96 96-42.981 96-96 96zM127.559 82.304l63.399 63.399c-18.559 10.987-34.252 26.67-45.255 45.255l-63.399-63.399a218.372 218.372 0 0 1 45.255-45.255zM82.304 384.441l63.399-63.399c10.987 18.559 26.67 34.252 45.255 45.255l-63.399 63.399a218.396 218.396 0 0 1-45.255-45.255zm302.137 45.255l-63.399-63.399c18.559-10.987 34.252-26.67 45.255-45.255l63.399 63.399a218.403 218.403 0 0 1-45.255 45.255z"></path>
+</svg>Support </a>
+<a href="https://account.sendinblue.com/advanced/settings" class="sidenav__control">
+<svg viewBox="0 0 512 512" class="icon sidenav__icon"><path d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path></svg>
+Settings </a>
+<a placement="right" class="sidenav__control" href="https://app.sendinblue.com/account/organization/invited/users"><svg class="icon sidenav__icon" viewBox="0 0 640 512"><path fill="currentColor" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" /></svg><span class="navigation_tag"><span class="navigation_tag-label">Users</span></span></a>
+<a href="https://app.sendinblue.com/account/security/two-factor-authentication/" class="sidenav__control">
+<svg viewBox="0 0 448 512" class="icon sidenav__icon">
+<path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z"></path>
+</svg>Security </a>
+</nav>
+</aside>
+
+<main class="page__content">
+
+<script> 
+    var smtpDiassociateToken = '7db0b918fbb398643a4489c1d0cc7cd3'
+    var addSmtpClientToken = '0de6f1027c36ac68aa72cbd92631eded'
+    var deleteUserIpDomainToken = '0401501da6acec9b8013177ef8eefa11'
+    var validateDomainToken = '3088f711c7fe5c8598e973b68ca65c08'
+    var addIpDomainToken = '60cc4ec2c37cc59ca566f3a40604f066'
+    var PERMISSION_DENIED = 'PERMISSION_DENIED';
+    
+    
+    
+    </script>
+<div id="main-content" data-ng-controller="sendersController">
+
+<header class="content__header header_standalone">
+<h1 class="content__heading">Senders, Domains & Dedicated IPs</h1>
+<div class="calltoaction-content-header header__cta">
+<form ng-if="activeTab[2]" id="cartformIP_28" method="post" action="/pricing/checkout/">
+<input type='hidden' name='token' value='cf9a3171ee7b6ecfe6915c87d0186770'><input type='hidden' name='ProductId' ng-value='28' /> <span ng-if="showGetDedicatedIpButton">
+<button type="button" ng-if="activeTab[2]" id="ip-button" class="clickable_button ip-button" href="javascript:void(0)">
+<i class="fa fa-plus"></i> Get a dedicated IP </button>
+</span>
+</form>
+<button ng-if="!activeTab[2]" popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-show="showAnchor" ng-cloak ng-click="hasPrivilege && callFunction(buttonMethod);" type="button" class="clickable_button" ng-class="hasPrivilege ? 'clickable_button' : 'clickable_button clickable_locked'">
+<i class="fa fa-plus"></i> {{ activeButton }}
+</button>
+</div>
+</header>
+
+
+<div id="content" class="sender-tabs spacer-bottom-lg" ng-cloak>
+<uib-alert ng-repeat="alert in tab_alerts" type="{{alert.type}}" close="closeAlert($index)" ng-bind-html="alert.msg" ng-cloak>
+{{alert.msg}}
+</uib-alert>
+<uib-tabset>
+
+
+<uib-tab select="loadSenders();" active="activeTab[0]" class="gtm-tab" data-gtm-tab="0">
+<uib-tab-heading>
+Senders </uib-tab-heading>
+<div role="tabpanel" id="tab-senders-senders" ng-cloak loading-container="loadingSenders">
+
+<div class="pane pane-default border-box" ng-repeat="(key, sender) in senders" ng-if="!isDedicatedIp">
+<div class="pane-top">
+<div class="pull-right">
+<b class="text-success spacer-right-xs" ng-if="sender.active">
+<i class="fa fa-check-circle"></i> Verified </b>
+<b class="text-muted spacer-right-xs" ng-if="!sender.active">
+<i class="fa fa-check-circle"></i> Not Verified </b>
+<button popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" type="button" class="clickable_button clickable_ghost" ng-class="hasPrivilege || 'clickable_locked'" ng-if="!sender.active" ng-click="hasPrivilege && openSenderVerify(sender, domainData);" href="javascript:void(0)">
+Verify this sender </button>
+<div class="collapsible clickable_dropdown" ng-show="showDelete(senders,sender)">
+<span style="display:none;"><input type="hidden" name="token" ng-model="sender.token" ng-init="sender.token = '3ad65a1e593d4d3d9aa1fdae67eed68e'"></span>
+<span style="display:none;"><input type="hidden" name="deleteToken" ng-model="sender.deleteToken" ng-init="sender.deleteToken = '7d33ad866175c06cd5ba3c97b4f58bd9'"></span>
+<button data-toggle="dropdown" class="clickable_button clickable_ghost collapsible__trigger" type="button">
+Manage
+</button>
+<ul role="menu" class="dropdown-menu dropdown-menu-right collapsible__content collapsible__content_touchy">
+<li>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" ng-if="!sender.old_sender" ng-click="hasPrivilege && openSenderEdit('lg', sender)" href="javascript:void(0)">
+Edit </a>
+</li>
+<li>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-click="hasPrivilege && remove($index, sender)" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" href="javascript:void(0)">
+Delete </a>
+</li>
+</ul>
+</div>
+</div>
+<h4>
+<b ng-bind-html="sender.from_name | unsafe"></b> - {{sender.from_email}}
+</h4>
+</div>
+<div class="pane-content no-padding clearfix">
+<div ng-if="sender.sign_domain == ''">
+<b>Domain Signature:</b> SendinBlue
+<a tabindex="0" uib-tooltip="The technical signature in your email headers will be managed by Sendinblue." popover-trigger="mouseenter" class="text-muted" popover-placement="right">
+<i class="fa fa-info-circle"></i>
+</a>
+</div>
+<div ng-if="sender.sign_domain != ''">
+<b>Domain Signature:</b> {{sender.sign_domain}} <a tabindex="0" uib-tooltip="The technical signature in your email headers will be managed by your own domain." popover-trigger="mouseenter" class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a>
+</div>
+<div ng-if="ip">
+<b>IP:</b> SendinBlue
+</div>
+</div>
+</div>
+
+
+<div class="pane pane-default border-box" ng-repeat="(key, sender) in senders" ng-if="isDedicatedIp">
+<div class="pane-top">
+<div class="pull-right">
+<b class="text-success spacer-right-xs" ng-if="sender.active">
+<i class="fa fa-check-circle"></i> Verified </b>
+<b class="text-muted spacer-right-xs" ng-if="!sender.active">
+<i class="fa fa-check-circle"></i> Not Verified </b>
+<button popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" type="button" class="clickable_button clickable_ghost" ng-class="hasPrivilege || 'clickable_locked'" ng-if="!sender.active" ng-click="hasPrivilege && openSenderVerify(sender, domainData);">
+Verify this sender </button>
+<div class="collapsible clickable_dropdown">
+<span style="display:none;"><input type="hidden" name="token" ng-model="sender.token" ng-init="sender.token = '3ad65a1e593d4d3d9aa1fdae67eed68e'"></span>
+<span style="display:none;"><input type="hidden" name="deleteToken" ng-model="sender.deleteToken" ng-init="sender.deleteToken = '7d33ad866175c06cd5ba3c97b4f58bd9'"></span>
+<button data-toggle="dropdown" class="clickable_button clickable_ghost collapsible__trigger" type="button">
+Manage
+</button>
+<ul role="menu" class="dropdown-menu dropdown-menu-right collapsible__content collapsible__content_touchy">
+<li>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" ng-if="!sender.old_sender" ng-click="hasPrivilege && openSenderEdit('lg', sender)" href="javascript:void(0)">
+Edit </a>
+</li>
+<li>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-click="hasPrivilege && remove($index, sender)" ng-show="showDelete(senders,sender) || sender.old_sender" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" href="javascript:void(0)">
+Delete </a>
+</li>
+</ul>
+</div>
+</div>
+<h4>
+<b>{{sender.from_name}}</b> - {{sender.from_email}}
+</h4>
+</div>
+<div class="pane-content no-padding clearfix">
+<div ng-if="sender.sign_domain != ''">
+<b>Domain Signature:</b> {{sender.sign_domain}} <a tabindex="0" uib-tooltip="Technical DKIM signature for your email headers." popover-trigger="mouseenter" class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a>
+</div>
+<div <b>IP:</b> <span ng-repeat="(mykey,myip) in sender.extra_data" ng-if="sender.extra_data.length">{{myip.IP}} <i class="fa fa-angle-right"></i> {{myip.smtp_domain}}<span ng-if="mykey!=(sender.extra_data.length-1)">, </span></span>
+</div>
+<div>
+<i class="text-muted"></i>
+</div>
+</div>
+</div>
+
+</div>
+</uib-tab>
+
+
+
+
+<uib-tab select="loadDomains(0);" active="activeTab[1]" class="gtm-tab" data-gtm-tab="1">
+<uib-tab-heading> Domains </uib-tab-heading>
+<div role="tabpanel" id="tab-senders-domains" ng-cloak loading-container="loadingDomains">
+<div ng-repeat="domain in domainData">
+<div class="pane pane-default border-box">
+<div class="pane-top clearfix">
+<div class="pull-right">
+<b class="text-muted spacer-right-xs" ng-if="ip_domains.indexOf(domain.domain) > -1">
+Associated with an IP </b>
+<button popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" type="button" class="clickable_button clickable_ghost" ng-class="hasPrivilege || 'clickable_locked'" ng-if="showVerifyButton(domain, ip_domains, user_dns)" ng-click="hasPrivilege && openVerifyDomain(domain);">
+Verify this domain </button>
+<b class="text-success spacer-right-xs" ng-if="showVerified(domain,ip_domains,user_dns)"> <i class="fa fa-check-circle"></i> Verified </b>
+<button popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-if="showAuthButton(domain, ip_domains, user_dns)" ng-click="hasPrivilege && openAuthDomain(domain);" class="clickable_button clickable_ghost" ng-class="hasPrivilege || 'clickable_locked'">
+Authenticate this domain </button>
+<b class="text-success spacer-right-xs" ng-if="showAuthenticated(domain,ip_domains,user_dns)"> <i class="fa fa-check-circle"> </i>Authenticated </b>
+<div class="collapsible clickable_dropdown">
+<span style="display:none;"><input type="text" name="token" ng-model="domain.token" ng-init="domain.token = '7090dcbb0618a0c75e42d14762ef6612'"></span>
+<span style="display:none;"><input type="text" name="token" ng-model="domain.deleteToken" ng-init="domain.deleteToken = 'bc9b28b2bf18ce0bf85b5bc5d2268943'"></span>
+<button data-toggle="dropdown" class="clickable_button clickable_ghost collapsible__trigger" type="button">Manage </button>
+<ul role="menu" class="dropdown-menu dropdown-menu-right collapsible__content collapsible__content_touchy">
+<li ng-if=showAuthDropdown(domain,ip_domains,user_dns)>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-click="hasPrivilege && openAuthDomain(domain)" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" href="javascript:void(0)">
+Authenticate this domain </a>
+</li>
+<li ng-if=domain.sign_domain!='2'>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-click="hasPrivilege && openEditDomain(domain)" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" href="javascript:void(0)">
+Edit </a>
+</li>
+<li>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-click="hasPrivilege && removeDomain($index, domain)" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" href="javascript:void(0)">
+Delete </a>
+</li>
+</ul>
+</div>
+</div>
+<h4 class="no-margin"><b ng-cloak>{{ domain.domain }}</b></h4>
+</div>
+</div>
+</div>
+<p ng-if="!domainData">Domain not available</p>
+</div>
+</uib-tab>
+ 
+
+
+<uib-tab select="loadIps();" active="activeTab[2]" class="gtm-tab" data-gtm-tab="2" ng-cloak>
+<uib-tab-heading> Dedicated IPs </uib-tab-heading>
+<div role="tabpanel" id="tab-senders-ips" loading-container="loaddedicatedips">
+<div class="collapse in" id="alert-subscription-certify-optin" aria-expanded="true" ng-show="update_status">
+<div class="alert alert-info no-margin"><b>{{update_message}}</b></div>
+<a ng-if="!ip.smtp_domain" class="btn btn-default" ng-click="assignDomain(ip, data, key)" href="javascript:void(0)" data-toggle="modal">Associate a Domain</a> </div>
+<div class="pane pane-default border-box" data-ng-repeat="(key,ip) in dedicatedIp">
+<div class="pane-top">
+<div class="pull-right"> <b ng-if="ip.enabled == 0" class="text-muted spacer-right-xs"><i class="fa fa-times-circle"></i> Inactive</b> <b ng-if="ip.enabled == 1" class="text-success spacer-right-xs"><i class="fa fa-check-circle"></i> Active</b>
+<button ng-if="!ip.smtp_domain" popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" class="clickable_button clickable_ghost" ng-class="hasPrivilege || 'clickable_locked'" ng-click="hasPrivilege && assignDomain(ip, data, key)">
+Associate a Domain </button>
+<button ng-if="ip.smtp_domain" popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" class="clickable_button clickable_ghost" ng-class="hasPrivilege || 'clickable_locked'" ng-click="hasPrivilege && assignDomain(ip, data, key)">
+Edit </button>
+<div ng-if="ip.smtp_domain" class="collapsible clickable_dropdown">
+<button type="button" class="clickable_button clickable_ghost collapsible__trigger" data-toggle="dropdown">Manage </button>
+<ul class="dropdown-menu dropdown-menu-right collapsible__content collapsible__content_touchy" role="menu">
+<li ng-if="ip.smtp_enabled == 1">
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" ng-click="hasPrivilege && diassociateSmtp(key)" href="javascript:void(0)">
+Stop using this IP for transactional emails </a>
+</li>
+<li ng-if="ip.smtp_enabled != 1">
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" ng-click="hasPrivilege && associateSmtp(key)" href="javascript:void(0)">
+Use this IP for transactional emails </a>
+</li>
+<li>
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" ng-click="hasPrivilege && deleteDomain(key)" href="javascript:void(0)">
+Disassociate this domain </a>
+</li>
+<li ng-if="ip.smtp_enabled == 1">
+<a popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" ng-class="hasPrivilege ? 'menu__control' : 'menu__control menu__control_locked'" ng-click="hasPrivilege && anotherDomainForm(key, data)" href="javascript:void(0)">
+Sign with another domain </a>
+</li>
+</ul>
+</div>
+<button ng-if="ip.ipRenew == 1" popover-placement="left" popover-enable="!hasPrivilege" uib-popover-template="permissionError" popover-trigger="mouseenter" class="clickable_button clickable_ghost renew" ng-class="hasPrivilege || 'clickable_locked'" ip="{{ip.ip}}" ng-click="hasPrivilege && renew_ip(key)">
+Renew </button>
+</div>
+<h4 ng-if="!ip.smtp_domain"><b>{{ip.ip}}</b></h4>
+<h4 ng-if="ip.smtp_domain"><b>{{ip.ip}}</b> <i class="fa fa-angle-right"></i> {{ip.smtp_domain}}</h4>
+</div>
+<div class="pane-content no-padding"> Sender Score: <b class="text-muted" compile="ip.ip"><i class="fa fa-spin fa-circle-o-notch"></i></b> • Sender Base: <b class="text-muted" senderbase="ip.ip"><i class="fa fa-spin fa-circle-o-notch"></i></b>
+</div>
+</div>
+<div class="centered_buttons"><button type="button" class="btn" ng-click="getMoreIps(ipPage)" ng-show="ipViewMore">View More</button></div>
+<form id="cartformIP_28" method="post" action="/pricing/checkout/">
+<input type="hidden" name="token" value="cf9a3171ee7b6ecfe6915c87d0186770">
+<input type="hidden" name="ProductId" ng-value="28" />
+<p id="noDedicatedIP" class="hidden" ng-if="!dedicatedIp">No dedicated IP. <span ng-if="showClickHere"> To get one, <a class="clickable_link" href="https://app.sendinblue.com/account/billing/addon/customize/ip" class="ip-button">click here</a>
+</span>
+</p>
+</form>
+</div>
+</uib-tab>
+
+
+</uib-tabset>
+<div style="clear:both;"></div>
+</div>
+
+
+<div id="footer" class="footer-bg spacer-bottom-xxlg" ng-cloak>
+<div class="row">
+<div claas="col-md-12">
+<div class="calltoaction-content-header">
+<div>
+<form ng-if="activeTab[2]" id="cartformIP_28" method="post" action="/pricing/checkout/">
+<input type="hidden" name="token" value="cf9a3171ee7b6ecfe6915c87d0186770">
+<input type="hidden" name="ProductId" ng-value="28" />
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<script type="text/ng-template" id="modal-senders-delete">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Confirmation </h4>
+            </div>
+            <div class="modal-body">
+                Active templates and scheduled campaigns should be updated with this new sender.</br>Are you sure you want to delete?            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="close()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="ok()"><i class="fa fa-check"></i> Yes</button>
+            </div>
+        </div>
+    </script>
+
+
+<script type="text/ng-template" id="modal-senders-associate-alert">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Confirmation </h4>
+            </div>
+            <div class="modal-body">
+                Active templates and scheduled campaigns should be updated with this new sender.            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="close()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="ok()"><i class="fa fa-check"></i> Yes</button>
+            </div>
+        </div>
+    </script>
+
+
+<script type="text/ng-template" id="modal-sender-activation-mail">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Activate a Sender </h4>
+            </div>
+            <div class="modal-body">
+                <uib-alert ng-repeat="alert in am_alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>
+                {{popupMsg}}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary active-sender-popup-btn" ng-click="ok(sender)" ng-disabled="counterVar" loading-button="sendActMail" loading-side ="right"><i class="fa fa-check"></i> Resend Activation Email <span ng-if="counterVar">({{counterVar}}s)</span></button>
+            </div>
+        </div>
+    </script>
+
+
+<script type="text/ng-template" id="modal-senders-manage-sender">
+        <div class="modal-content">
+            <form  id="sender_frm" name="sender_frm" action="" method="POST" role="form" novalidate>
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Sender</h4>
+                    <div class="alert alert-danger spacer-top-sm" ng-if="dedicatedIpdata && sender.dedicatedIp==1 && sender.selected_id_domain.length==0">Please select an IP from the pool of available IPs.</div>
+                    <div class="alert alert-danger spacer-top-sm" ng-if="senderNameEmailvalidations && (!sender.from_name || !sender.from_email)">Please enter a valid sender name and sender email</div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="tab-content">
+
+                        <div id="edit-sender-case-2">
+
+                            <!-- begin .row -->
+                            <div class="row">
+                                <div>
+                                    <div class="pane pane-default no-margin" ng-style='{"background":"none","paddingTop":"10px","paddingRight":"30px","paddingLeft":"30px","paddingBottom":"0px"}'>
+
+                                        <div class="pane-content no-padding">
+
+                                            <!-- begin .row -->
+                                            <div class="row" ng-if="!otherDomainAlertShown && !(showDkimAlert || showDmarcAlert||showCriticalDmarcAlert||dedicatedIpResultAlert)">
+
+                                                <div class="form-group col-sm-6" ng-class="{'has-error': (sender_frm.sender_from_name.$invalid && sender_frm.sender_from_name.$touched)}">
+
+                                                    <label class="control-label" for="sender_from_name"> From Name <a tabindex="0" uib-tooltip="The sender name your contacts will see in their mailbox, eg: John"  popover-trigger="mouseenter"  class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a></label>
+                                                    <input type="text" class="required form-control" name="sender_from_name"  id="sender_from_name"  ng-model="sender.from_name" data-ng-disabled="sender.action=='edit'&&sender.dedicatedIp" required/>
+                                                    <span class="help-block" ng-show="sender_frm.sender_from_name.$invalid && sender_frm.sender_from_name.$touched">Please enter a valid sender name.</span>
+                                                    <span style="display:none;"><input  type=hidden name="token" ng-model="sender.token" ng-init="sender.token = '3ad65a1e593d4d3d9aa1fdae67eed68e'"/></span>
+                                                </div>
+
+                                                <div class="form-group col-sm-6" ng-class="{'has-error': (sender_frm.sender_from_email.$invalid && sender_frm.sender_from_email.$touched)}">
+                                                    <label class="control-label" for="sender_from_email">From Email <a tabindex="0" uib-tooltip="The sender email address that your contacts will see in their mailbox, eg: john@address.com"  popover-trigger="mouseenter"  class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a></label>
+                                                    <input type="email" class="required form-control" name="sender_from_email" id="sender_from_email" value="" ng-model="sender.from_email" data-ng-disabled="sender.action=='edit'&&sender.dedicatedIp" required validate-email/>
+                                                    <span class="help-block" ng-show="sender_frm.sender_from_email.$invalid && sender_frm.sender_from_email.$touched">Please enter a valid sender email.</span>
+                                                </div>
+
+                                                <div ng-if="!anyDomainActive&&!sender.dedicatedIp" class="ng-scope col-md-12"><i class="text-muted">e.g. : To sign your emails with your own domains, add your domain using the domain tab</i></div>
+
+                                                <div class="col-md-12 form-group no-margin-bottom" ng-if="sender.dedicatedIp && ip_data.length>0">
+                                                    <label class="control-label">Pool of IPs used for this sender <a tabindex="0" uib-tooltip="You can create an IP pool from your dedicated IPs so that your campaigns can be delivered more quickly and effectively."  popover-trigger="mouseenter"  class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a> </label>
+                                                    <div id="selected_id_domain">
+                                                        <div ng-repeat="(key, ip) in sender.selected_id_domain" style="display: block; padding: 5px 0;">
+
+                                                            <div class="pull-left" style="line-height:30px;">{{ip.IP }} <i class="fa fa-angle-right"></i> {{ip.smtp_domain}}</div>
+
+                                                            <div  ng-class="{'has-error':(sender.weightError[ip._id+'|'+ip.smtp_domain])}" class="spacer-left-xs pull-left">
+
+                                                                  <input type="text" ng-init="intialWeightUpdate(sender)" ng-model="sender.weight[ip._id+'|'+ip.smtp_domain]" weight-digits  ng-change="balanceWeight(false, ip._id+'|'+ip.smtp_domain, sender);" class="form-control pull-left spacer-right-sm input-sm" style="width:45px;" ng-disabled="sender.selected_id_domain.length==1" />
+
+                                                                  <span class="pull-left spacer-right-sm spacer-top-xxs"> % </span>
+
+                                                                  <a href="#" ng-if="sender.selected_id_domain.length>1" class="remove-me btn-xs" ng-click="removeIP(ip,sender)" style="color: #999999;"><i class="fa fa-times-circle spacer-top-xs"></i></a>
+
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                             <span class="has-error help-block text-danger" ng-show="sender.weightError[ip._id+'|'+ip.smtp_domain]">{{sender.weightError[ip._id+'|'+ip.smtp_domain]}}</span>
+                                                            <div class="clearfix"></div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                    <div class="form-group pull-left" ng-class="{'has-error':(ip_touched && sender.dedicatedIp && sender.id_domain.length <= 0)}">
+                                                        <span class="help-block" ng-show="ip_touched && sender.dedicatedIp && sender.id_domain.length <= 0">Please select an IP address for this sender.</span>
+                                                    </div>
+
+                                                    <div class="form-group" ng-if="sender.dedicatedIp && ip_data.length>0">
+                                                        <div>
+                                                            <table id="ip_domain_listing" class="table table-condensed">
+                                                            </table>
+                                                            <a  class="clickable_link add-from-select btn-xs" ng-click="openAddIP(sender);" href="javascript:void(0)"><i class=" fa fa-plus-circle"></i> Add </a>
+                                                            <span class="help-block" style="display:initial" id="add_ips_error"></span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="form-group" ng-if="sender.dedicatedIp && ip_data.length==0">
+                                                <div>Please configure a dedicated IP to create a new sender. <a class="clickable_link" href="javascript:void(0);" ng-click="openDedicatedIPTab(sender, 'only')">Click here to configure your IP.  </a>
+                                                </div>
+                                            </div>
+                                            <!-- end .row -->
+
+                                            <!-- begin .row -->
+                                            <div class="row" ng-if="otherDomainAlertShown && !(showDkimAlert || showDmarcAlert)">
+
+                                                <div class="form-group">
+                                                    Yahoo, AOL, Laposte and iCloud are not allowing third-party tools to use their domains as senders. We advise using an email address of your own website domain. If you still want to use one of these domains, we'll add a Sendinblue domain (e.g.: sender-sib.com) after your address during sending.                                                </div>
+                                            </div>
+                                            <!-- end .row -->
+
+                                            <div class="row" ng-if="showDkimAlert && sender.dedicatedIp"> <!-- need to show different dkim pop for dedicated ip -->
+                                                Your sender domain has not yet been verified, so we'll send an email to this address to verify your sender. To avoid verifying senders individually, you can also add verified domains. <a class="clickable_link" href="javascript:void(0);" ng-click="openDomainTab(sender, 'add');">Add a verified domain</a>
+                                            </div>
+                                            <div class="row" ng-if="showDkimAlert && !sender.dedicatedIp">
+                                                Deliverability Tip: <br> For optimal deliverability, we recommend digitally signing your emails with your own website domain (this is not required). To do this, add the domain to your Sendinblue account. Then, follow the on-screen instructions to authenticate your domain by adding new DNS records. This will allow you to sign emails with your own domain. <a class="clickable_link" href="javascript:void(0);" ng-click="openDomainTab(sender, 'add');">Add an authenticated domain</a>
+                                            </div>
+                                            <div class="row" ng-if="showDmarcAlert">
+                                                To optimize your deliverability, you can configure the DMARC settings on your sender's domain. <a class="clickable_link" href="javascript:void(0);" ng-click="openDomainTab(sender, 'only');">Configure the DMARC in the 'domain' section</a>
+                                            </div>
+                                            <div class="" ng-if="showCriticalDmarcAlert">
+                                                <h4 class="text-danger"><i class="fa fa-exclamation-triangle"></i> Due to DMARC policy of your from domain, you cannot use this email as a sender. Please select another sender or reconfigure the DMARC policy on your from domain </h4> <!--<a href="javascript:void(0);" ng-click="openDomainTab(sender, 'only');">Configure the DMARC in domain section</a>-->
+                                            </div>
+                                            <div class="row" ng-if="dedicatedIpResultAlert" style="padding:0 15px;">
+                                                <h4>For optimal deliverability, we strongly advise you to:</h4>
+                                                <div ng-repeat="ipResult in dedicatedIpResult.ipValidationResult">
+                                                    <div ng-if="!ipResult.ipSPF" class="spacer-bottom-xs" style="padding-left:30px;">  - configure SPF on your IP domain ({{ipResult.domain}})</div>
+                                                    <div ng-if="!ipResult.ipDkim" class="spacer-bottom-xs" style="padding-left:30px;">  - configure DKIM on your IP domain ({{ipResult.domain}})</div>
+                                                </div>
+                                                <div ng-if="!dedicatedIpResult.fromdkim" class="spacer-bottom-xs" style="padding-left:30px;"></i> - configure DKIM on your sender domain ({{dedicatedIpResult.senderDataInsert.from_email}})</div>
+                                                <div ng-if="dedicatedIpResult.showDmarcError" class="spacer-bottom-xs"></i> The DMARC policy for your from domain does not allow us to send emails. This may impact your deliverability.</div>
+
+                                            </div>
+                                            
+                                            
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- end .row -->
+
+                            <div style="font-style:italic;width:50%;margin:10px auto;text-align:center;">
+                                                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="cancel()" ng-if="!otherDomainAlertShown && !(showDkimAlert || showDmarcAlert||showCriticalDmarcAlert||dedicatedIpResultAlert)">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="btn-edit-sender-save" ng-click="ok(sender);"   loading-button="saveSender" loading-side ="right"   ng-if="!otherDomainAlertShown && !(showDkimAlert || showDmarcAlert ||showCriticalDmarcAlert||dedicatedIpResultAlert)"><i class="fa fa-check"></i>Save </button>
+                    <button type="button" class="btn btn-default" ng-click="resetForm()" ng-if="otherDomainAlertShown && !(showDkimAlert || showDmarcAlert)">Use my domain</button>
+                    <button type="button" class="btn btn-primary" id="btn-edit-sender-save" ng-click="ok(sender);" loading-button="saveSender" loading-side ="right" ng-disabled="sender_frm.sender_from_name.$invalid || sender_frm.sender_from_email.$invalid || (sender.dedicatedIp && !sender.id_domain.length)" ng-if="otherDomainAlertShown && !(showDkimAlert || showDmarcAlert||showCriticalDmarcAlert||dedicatedIpResultAlert)"><i class="fa fa-check"></i>Keep my current From Email</button>
+                    <button type="button" class="btn btn-primary" ng-click="okAlert(sender);" ng-if="(showDkimAlert || showDmarcAlert)"><i class="fa fa-check"></i>OK</button>
+                    <button type="button" class="btn btn-primary" ng-click="openDomainTab(sender, 'only');" ng-if="showCriticalDmarcAlert"><i class="fa fa-check"></i>Configure the DMARC in domain section</button>
+                    <button type="button" class="btn btn-primary" ng-click="okAlert(sender);" ng-if="dedicatedIpResultAlert"><i class="fa fa-check"></i>OK</button>
+
+                </div>
+            </form>
+        </div>
+    </script>
+
+
+<script type="text/ng-template" id="modal-senders-verify-sender">
+        <div class="modal-content">
+            <form  id="sender_frm" name="sender_verify_frm" action="" method="POST" role="form" novalidate>
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Verify <strong>{{from_domain = sender.from_email.split("@", 2);from_domain[1];}}</strong> - {{sender.from_email}}</h4>
+                </div>
+                <div class="modal-body">
+                      <!-- begin .row -->
+                      <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                          <div class="spacer-bottom text-center">
+                            <h5><b>Verify this sender</b></h5>
+                            <p>To be able to use this sender, we need to verify that you have access to the email address.</p>
+                          </div>
+                          <div class="pane pane-default no-margin">
+                            <div class="pane-content no-padding">
+
+                              <!-- begin .row -->
+                              <div class="row">
+                                <div class="form-group col-sm-12 no-margin-bottom">
+                                  <!-- <label>Verification Method</label> -->
+                                  <div class="radio">
+                                    <!-- <label>
+                                      <input type="radio" name="verify_sender_verify_method" id="verify_sender_verify_method_1" value="1" ng-model="sender.verify_method" />
+                                       </label> -->
+                                    <div id="verify-sender-verify-method-1-collapse" class="spacer-top-xxs" ng-class="{'hide':sender.verify_method != '1'}">
+                                      <div class="panel panel-default">
+                                        <div class="panel-body">
+                                          <ul class="list-unstyled">
+                                            <li>
+                                              <div>To send the verification email, click on <b>Send the verification email</b> button below. Please click on the link in the email received.</div>
+                                              <div class="text-center spacer-top-md spacer-bottom-md">
+                                                <a href="javascript:void(0)" class="btn btn-primary" id="btn-verify-sender-email" ng-click="ok(sender);"><i class="fa fa-send"></i> Send the verification email</a>
+                                                </div>
+                                                <div>
+                                                    Your sender domain has not yet been verified, so we'll send an email to this address to verify your sender. To avoid verifying senders individually, you can also add verified domains. <a class="clickable_link" href="javascript:void(0);" ng-click="openDomainTab(sender, 'add');">Add a verified domain</a>
+                                                </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- <div class="radio">
+                                    <label>
+                                      <input type="radio" name="verify_sender_verify_method" id="verify_sender_verify_method_2" value="2" ng-model="sender.verify_method" />
+                                      Host a file on this domain to automatically verify all new senders from this domain. </label>
+                                    <div id="verify-sender-verify-method-2-collapse" class="spacer-top-xxs" ng-class="{'hide':sender.verify_method != '2'}">
+                                      <div class="panel panel-default">
+                                        <div class="panel-body">
+                                          <ul class="list-unstyled">
+                                            <li><b class="text-muted pull-right btn-verify-record-status" ng-show="!sender.valid_host"><i class="fa fa-times-circle"></i>Unconfigured</b>
+                                            <b class="text-success pull-right btn-verify-record-status" ng-show="sender.valid_host">
+                                                <i class="fa fa-check"></i>
+                                                Configured                                            </b> In root directory, add a file with the name                                              <pre style="word-wrap:break-word;white-space:pre-wrap;" id="sender_host_txt">15355fd9dc59924cff4c9a8e5522b939.html</pre>
+                                              <a href="javascript:void(0)" class="btn btn-default btn-xs pull-right" data-clipboard-target="sender_host_txt" copytoclip><i class="fa fa-clipboard"></i></a> <a href="javascript:void(0)" class="btn btn-primary btn-verify-record" id="dns_txt_verify" ng-click="validate(sender, 'host');" loading-button="checkHost">I host the file, please verify it</a> </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> -->
+                                  <!-- <div class="radio">
+                                    <label>
+                                      <input type="radio" name="verify_sender_verify_method" id="verify_sender_verify_method_3" value="3" ng-model="sender.verify_method" />
+                                      Add a DNS entry on this domain to automatically verify all new senders from this domain. </label>
+                                    <div id="verify-sender-verify-method-3-collapse" class="spacer-top-xxs" ng-class="{'hide':sender.verify_method != '3'}">
+                                      <div class="panel panel-default">
+                                        <div class="panel-body">
+                                          <ul class="list-unstyled">
+                                            <li> <b class="text-muted pull-right btn-verify-record-status" ng-show="!sender.valid_verify"><i class="fa fa-times-circle"></i>Unconfigured</b>
+                                            <b class="text-success pull-right btn-verify-record-status" ng-show="sender.valid_verify">
+                                                <i class="fa fa-check"></i>
+                                                Configured                                            </b>
+                                             Set TXT record for "{{from_domain[1]}}" to                                              <pre style="word-wrap:break-word;white-space:pre-wrap;" id="sender_dns_txt">Sendinblue-code:15355fd9dc59924cff4c9a8e5522b939</pre>
+                                              <a href="javascript:void(0)" class="btn btn-default btn-xs pull-right" data-clipboard-target="sender_dns_txt" copytoclip><i class="fa fa-clipboard"></i></a> <a href="javascript:void(0)" class="btn btn-primary btn-verify-record" id="dns_txt_verify" ng-click="validate(sender, 'dns');" loading-button="checkVerify"></i> I added the record, please verify it</a> </li>
+                                          </ul>
+                                          <b>It may take up to <u>24-48 hours</u> for DNS changes to fully propagate.</b> </div>
+                                      </div>
+                                    </div>
+                                  </div> -->
+                                </div>
+                              </div>
+                              <!-- end .row -->
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end .row -->
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button class="btn btn-default" type="button" ng-disabled="verifyButtonDisabed = !(sender.verify_method == 2 && sender.valid_host || sender.verify_method == 3 && sender.valid_verify)" ng-click="ok(sender)" uib-tooltip="Please check each line of your configuration to finish the verification." tooltip-enable="verifyButtonDisabed">I'm done</button> -->
+                </div>
+            </form>
+        </div>
+    </script>
+<script type="text/ng-template" id="modal-senders-add-ip">
+        <div class="modal-content">
+
+             <div class="" id="confimation_modal_select">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Select an IP</h4>
+                        </div>
+                        <form method="post" id="paramaddfrm" name="paramaddfrm">
+                        <div class="modal-body">
+                             <div class="form-group" style="padding-bottom:50px;">
+                                <div class="col-md-6">
+                                    <label class="control-label">Domain managed by Sendinblue</label>
+                                    <select name="ip_domain" id="ip_domain" ng-model="ip_domain" ng-init="ip_domain = setDefaultIP(sender.ip_data)"  class="span5 form-control" >
+                                        <option ng-repeat="(key, ip) in sender.ip_data" ng-selected="key==0"  value="{{ip._id}}|{{ip.smtp_domain}}|{{ip.IP}}">{{ip.IP}} <i class="fa fa-angle-right"></i> {{ip.smtp_domain}}</option>
+                                    </select>
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                    <button type="button" id="add-ip" name="add-ip" ng-disabled="!ip_domain" ng-click="AddIP(ip_domain);" class="btn btn-primary">OK</button>
+                                    <a href="#" id="close-me" class="btn btn-default" data-dismiss="modal"  ng-click="close()">Cancel</a>
+                            </div>
+                    </form>
+                    </div></div></div>
+        </div>
+    </script>
+
+
+
+
+<script type="text/ng-template" id="modal-domain-delete">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Confirmation </h4>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete?            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="close()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="ok()"><i class="fa fa-check"></i> Yes</button>
+            </div>
+        </div>
+    </script>
+
+
+<script type="text/ng-template" id="modal-senders-manage-domain">
+        <form id="modal_senders_manage_domain_form" name="modal_senders_manage_domain_form" method="post" action="">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Domain</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="pane-content no-padding">
+                        <div class="pane-content no-padding">
+
+                            <!-- begin .row -->
+                            <div class="row">
+                                <div class="form-group col-sm-12" ng-class="{'has-error':(modal_senders_manage_domain_form.domain_name.$invalid && modal_senders_manage_domain_form.domain_name.$touched)}">
+                                    <uib-alert ng-repeat="alert in alertArray" type="{{alert.type}}">
+                                        {{ alert.message }}
+                                    </uib-alert>
+                                    <label class="control-label" for="edit-domain-domain-name">
+                                        Domain Name                                    </label>
+                                    <a tabindex="0" uib-tooltip="The domain name should not include 'http://' or 'https://' or 'www'. Also, please note that the word 'sendinblue' should not be used in the domain/subdomain name."  popover-trigger="mouseenter"  class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a>
+                                    <input type="text" class="required form-control" name="domain_name" id="domain_name" ng-model="domainData.domain" enter-key-press="save(domainData);" required domain/>
+                                    <span class="help-block" ng-show="modal_senders_manage_domain_form.domain_name.$invalid && modal_senders_manage_domain_form.domain_name.$touched">Please enter a valid domain name.</span>
+                                    <span style="display:none;"> <input  type=hidden name="token" ng-model="domainData.token" ng-init="domainData.token = '7090dcbb0618a0c75e42d14762ef6612'"/></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-12">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="sign_domain" id="sign_domain" ng-model="domainData.sign_domain" ng-true-value="1" ng-false-value="0"/> I would like to use this domain name to digitally sign my emails (SPF, DKIM, DMARC) <a tabindex="0" uib-tooltip="For advanced users: personalize the technical signature in your email headers with your own domain name."  popover-trigger="mouseenter"  class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end .row -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="cancel();">
+                        Cancel                    </button>
+
+                    <button type="button" class="btn btn-primary" id="btn-edit-domain-save" ng-disabled="!modal_senders_manage_domain_form.domain_name.$valid" ng-click="save(domainData);">
+                        Save                    </button>
+                </div>
+
+            </div>
+            <!-- end .row -->
+        </form>
+    </script>
+
+
+<script type="text/ng-template" id="modal-senders-verify-domain">
+        <form id="modal-senders-verify-domain-form" name="modal-senders-verify-domain-form" method="post" action="">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Verify {{ domainData.domain }} </h4>
+                </div>
+
+                <div class="modal-body" ng-init="domainData.verify_method=1">
+
+                    <!-- begin .row -->
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="form-group">
+                                <uib-alert ng-repeat="alert in alertArray" type="{{alert.type}}">
+                                    {{ alert.message }}
+                                </uib-alert>
+                            </div>
+                            <div class="spacer-bottom text-center">
+                                <h5><b>Verify This Domain</b></h5>
+                                <p>Once your domain is verified, all senders from this domain will be verified automatically.</p>
+                            </div>
+
+                            <div class="pane pane-default no-margin">
+
+                                <div class="pane-content no-padding">
+                                    <!-- begin .row -->
+                                    <div class="row">
+
+                                        <div class="form-group col-sm-12 no-margin-bottom">
+
+                                            <label>Verification Method</label>
+
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="verify-domain-verify-method" id="verify-domain-verify-method-1" ng-model="domainData.verify_method" value="1"/>
+                                                    Host a file                                                </label>
+                                                <div id="verify-domain-verify-method-1-collapse" class="spacer-top-xxs" ng-class="{'hide':domainData.verify_method != '1'}">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <b class="text-muted pull-right btn-verify-record-status" ng-show="!domainData.valid_host">
+                                                                        <i class="fa fa-times-circle"></i>
+                                                                        Unconfigured                                                                    </b>
+                                                                    <b class="text-success pull-right btn-verify-record-status" ng-show="domainData.valid_host">
+                                                                        <i class="fa fa-check"></i>
+                                                                        Configured                                                                    </b>
+                                                                    In root directory, add a file with the name                                                                    <pre style="word-wrap:break-word;white-space:pre-wrap;">15355fd9dc59924cff4c9a8e5522b939.html</pre>
+                                                                    <a href="javascript:void(0);" class="btn btn-primary btn-verify-record"  ng-click="validate(domainData, 'host');" loading-button="checkHost" id="host_file_verify">    File hosted. Please verify it.                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="verify-domain-verify-method" id="verify-domain-verify-method-2" ng-model="domainData.verify_method" value="2"/>
+                                                    Add a DNS entry                                                </label>
+                                                <div id="verify-domain-verify-method-2-collapse" class="spacer-top-xxs" ng-class="{'hide':domainData.verify_method != '2'}">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <b class="text-muted pull-right btn-verify-record-status" ng-if="!domainData.valid_verify"><i class="fa fa-times-circle"></i> Unconfigured</b>
+                                                                    <b class="text-success pull-right btn-verify-record-status" ng-if="domainData.valid_verify"><i class="fa fa-check-circle"></i>Configured</b>
+                                                                    Set TXT record for "{{domainData.domain}}" to                                                                    <pre style="word-wrap:break-word;white-space:pre-wrap;" id="spf_txt">Sendinblue-code:15355fd9dc59924cff4c9a8e5522b939</pre>
+                                                                    <a href="javascript:void(0)" class="btn btn-default btn-xs pull-right copy_text" ng-click="textCopyToClipboard('#spf_txt')" title="Copy to Clipboard">
+                                                                        <i class="fa fa-clipboard"></i>
+                                                                    </a>
+                                                                    <a href="javascript:void(0)" id="dns_txt_verify" class="btn btn-primary btn-verify-record" ng-click="validate(domainData, 'dns');" loading-button="checkVerify">
+                                                                        Record added. Please verify it.                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <b>It may take up to <u>24-48 hours</u> for DNS changes to fully propagate.</b>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="verify-domain-verify-method" id="verify-domain-verify-method-3" ng-model="domainData.verify_method" value="3"/>
+                                                    Send an email                                                </label>
+                                                <div id="verify-domain-verify-method-3-collapse" class="spacer-top-xxs" ng-class="{'hide':domainData.verify_method != '3'}">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-body">
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    An email will be sent to                                                                    <pre style="word-wrap:break-word;white-space:pre-wrap;text-align: center;" id="byemail_txt">administrator@{{domainData.domain}} <br> hostmaster@{{domainData.domain}} <br> postmaster@{{domainData.domain}} <br> webmaster@{{domainData.domain}} <br> admin@{{domainData.domain}}</pre>
+                                                                        
+                                                                    <a href="javascript:void(0)" id="txt_byemail" class="btn btn-primary btn-verify-record" ng-click="validateByEmail(domainData);" loading-button="checkByEmail">
+                                                                        Send an email                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <b>To verify this domain, please click on the link in the email sent to'postmaster@{{domainData.domain}}'</b>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end .row -->
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- end .row -->
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="cancel();">
+                        Cancel                    </button>
+                    <button onclick="javascript:gtmPush('analyticsEvent','Account','Validation','SenderDomain');" type="button" class="btn btn-primary" id="verify-domain-update" name="verify-domain-update" ng-disabled="verifyButtonDisabed = !(domainData.verify_method > 0 && (domainData.valid_host || domainData.valid_verify))" ng-click="update(domainData, 'verify');" loading-button="updateRequest" uib-tooltip="Please check each line of your configuration to finish the verification." tooltip-enable="verifyButtonDisabed">
+                        I'm done                    </button>
+                </div>
+
+            </div>
+        </form>
+    </script>
+
+
+<script type="text/ng-template" id="modal-senders-authenticate-domain">
+        <form id="modal-senders-authenticate-domain-form" name="modal-senders-authenticate-domain-form" method="post" action="">
+            <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Authorize {{domainData.domain}}</h4>
+            </div>
+            <div class="modal-body">
+
+              <!-- begin .row -->
+              <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="form-group">
+                        <uib-alert ng-repeat="alert in alertArray" type="{{alert.type}}">
+                            {{ alert.message }}
+                        </uib-alert>
+                    </div>
+                  <div class="spacer-bottom text-center">
+                    <h5><b>Authorize this domain</b></h5>
+                    <p>Authorize your domain to create new senders linked to this domain without having to verify each email address. E.g. By authorizing 'mydomain.com' you can add new @mydomain.com senders without having to verify each email address.</p>
+                  </div>
+                  <div class="pane pane-default no-margin">
+                    <div class="pane-content no-padding">
+
+                      <!-- begin .row -->
+                      <div class="row">
+                        <div class="col-sm-12">
+
+                            <!-- <label>Verification Method</label>
+
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="verify-domain-verify-method" id="verify-domain-verify-method-1" ng-model="domainData.verify_method" value="1"/>
+                                    Host a file "{{domainData.domain}}"
+                                </label>
+                                <div id="verify-domain-verify-method-1-collapse" class="spacer-top-xxs">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <b class="text-muted pull-right btn-verify-record-status" ng-show="!domainData.valid_host">
+                                                        <i class="fa fa-times-circle"></i>
+                                                        Unconfigured                                                    </b>
+                                                    <b class="text-success pull-right btn-verify-record-status" ng-show="domainData.valid_host">
+                                                        <i class="fa fa-check"></i>
+                                                        Configured                                                    </b>                                                     In root directory, add a file with the name                                                    <pre style="word-wrap:break-word;white-space:pre-wrap;">15355fd9dc59924cff4c9a8e5522b939.html</pre>
+                                                    <a href="javascript:void(0);" class="btn btn-primary btn-verify-record" ng-click="validate(domainData, 'host');" loading-button="checkHost" id="host_file_verify">
+                                                        File hosted. Please verify it.                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+
+                            <div class="radio">
+                                <!--<label>
+                                    <input type="radio" name="verify-domain-verify-method" id="verify-domain-verify-method-2" ng-model="domainData.verify_method" value="2" ng-change='verifyMethodChange();'/>
+                                    Add a DNS entry "{{domainData.domain}}"
+                                </label>-->
+                                <div id="verify-domain-verify-method-1-collapse" class="spacer-top-xxs" ng-init="domainData.verify_method=2">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <ul class="list-unstyled">
+                                            <li class="spacer-bottom">
+                                            <b class="text-muted pull-right btn-verify-record-status" ng-show="!domainData.valid_dkim"><i class="fa fa-times-circle"></i> Unconfigured</b>
+                                            <b class="text-success pull-right btn-verify-record-status" ng-show="domainData.valid_dkim">
+                                                <i class="fa fa-check"></i>
+                                                Configured                                            </b>
+                                            <b>1.</b> Set TXT (DKIM) record for "mail._domainkey.{{domainData.domain}}" to                                              <pre style="word-wrap:break-word;white-space:pre-wrap;" id="dkim_record">k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeMVIzrCa3T14JsNY0IRv5/2V1/v2itlviLQBwXsa7shBD6TrBkswsFUToPyMRWC9tbR/5ey0nRBH0ZVxp+lsmTxid2Y2z+FApQ6ra2VsXfbJP3HE6wAO0YTVEJt1TmeczhEd2Jiz/fcabIISgXEdSpTYJhb0ct0VJRxcg4c8c7wIDAQAB</pre>
+                                              <a href="javascript:void(0);" class="btn btn-default btn-xs pull-right copy_text" ng-click="textCopyToClipboard('#dkim_record')" title="Copy to Clipboard">
+                                                <i class="fa fa-clipboard"></i>
+                                              </a>
+
+                                              <a href="javascript:void(0);" ng-click="validate(domainData, 'dkim');" loading-button="checkDkim" class="btn btn-primary btn-verify-record">
+                                                    Record added. Please verify it.                                              </a>
+                                            </li>
+                                            <li class="spacer-bottom">
+                                            <b class="text-muted pull-right btn-verify-record-status" ng-show="!domainData.valid_spf"><i class="fa fa-times-circle"></i> Unconfigured</b>
+                                            <b class="text-success pull-right btn-verify-record-status" ng-show="domainData.valid_spf">
+                                                <i class="fa fa-check"></i>
+                                                Configured                                            </b>
+                                            <b>2.</b> Set TXT (SPF) record for "{{domainData.domain}}" to                                              <pre style="word-wrap:break-word;white-space:pre-wrap;" id="spf_record">v=spf1 include:spf.sendinblue.com mx ~all</pre>
+
+                                              <a href="javascript:void(0);" class="btn btn-default btn-xs pull-right copy_text" ng-click="textCopyToClipboard('#spf_record')" title="Copy to Clipboard">
+                                                <i class="fa fa-clipboard"></i>
+                                              </a>
+
+                                              <a href="javascript:void(0);" ng-click="validate(domainData, 'spf');" loading-button="checkSpf" class="btn btn-primary btn-verify-record">Record added. Please verify it.</a> </li>
+
+                                            <li class="spacer-bottom">
+                                            <b class="text-muted pull-right btn-verify-record-status" ng-show="!domainData.valid_verify"><i class="fa fa-times-circle"></i>Unconfigured</b>
+                                            <b class="text-success pull-right btn-verify-record-status" ng-show="domainData.valid_verify">
+                                                <i class="fa fa-check"></i>
+                                                Configured                                            </b>
+                                            <b>3.</b> Set TXT record for "{{domainData.domain}}" to                                              <pre style="word-wrap:break-word;white-space:pre-wrap;" id="dns_record">Sendinblue-code:15355fd9dc59924cff4c9a8e5522b939</pre>
+                                                <a href="javascript:void(0);" class="btn btn-default btn-xs pull-right copy_text" ng-click="textCopyToClipboard('#dns_record')" title="Copy to Clipboard">
+                                                <i class="fa fa-clipboard"></i>
+                                              </a>
+
+                                              <a href="javascript:void(0);" ng-click="validate(domainData, 'dns');" loading-button="checkVerify" class="btn btn-primary btn-verify-record">Record added. Please verify it.</a> </li>
+                                            <li>
+
+                                            <b class="text-muted pull-right btn-verify-record-status" ng-show="!domainData.valid_dmarc"><i class="fa fa-times-circle"></i>Unconfigured (Optional)</b>
+                                            <b class="text-success pull-right btn-verify-record-status" ng-show="domainData.valid_dmarc">
+                                                <i class="fa fa-check"></i>
+                                                Configured                                            </b>
+                                            <b>4.</b> Set TXT (DMARC <a tabindex="0" uib-tooltip="A DMARC record is recommended but not required. If you know how to manage DMARC settings, feel free to replace our email, dmarc@mailinblue.com, with your own." popover-trigger="mouseenter"  class="text-muted" popover-placement="right"><i class="fa fa-info-circle"></i></a>) record for "_dmarc.{{domainData.domain}}" to                                              <pre style="word-wrap:break-word;white-space:pre-wrap;" id="dmarc_record">v=DMARC1; p=none; sp=none; rua=mailto:dmarc@mailinblue.com!10m; ruf=mailto:dmarc@mailinblue.com!10m; rf=afrf; pct=100; ri=86400</pre>
+                                                    <a href="javascript:void(0);" class="btn btn-default btn-xs pull-right copy_text" ng-click="textCopyToClipboard('#dmarc_record')" title="Copy to Clipboard">
+                                                <i class="fa fa-clipboard"></i>
+                                                </a>
+
+
+                                              <a href="javascript:void(0);" ng-click="validate(domainData, 'dmarc');" loading-button="checkDmarc" class="btn btn-primary btn-verify-record"> Record added. Please verify it.</a> </li>
+                                            </ul>
+                                            <b>It may take up to <u>24-48 hours</u> for DNS changes to fully propagate.</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                      </div>
+                      <!-- end .row -->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end .row -->
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" ng-disabled="authenticateButtonDisabed = !((domainData.verify_method == 1 && domainData.valid_host == 1) || (domainData.verify_method == 2 && (domainData.valid_dkim == 1 && domainData.valid_spf == 1 && domainData.valid_verify == 1)))" ng-click="update(domainData, 'auth');" loading-button="updateRequest" uib-tooltip="Please check each line of your configuration to complete authentification." tooltip-enable="authenticateButtonDisabed">I'm done</button>
+            </div>
+            </div>
+        </form>
+  </script>
+
+
+<script type="text/ng-template" id="modal-domain-activation-mail">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Verify a domain </h4>
+        </div>
+        <div class="modal-body">
+            <uib-alert ng-repeat="alert in am_alerts" type="{{alert.type}}" close="closeAlert($index)"> <p ng-bind-html="alert.msg | unsafe"></p></uib-alert>
+            {{popupMsg}}
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="close()">Cancel</button>
+            <button type="button" class="btn btn-primary" ng-click="ok(domain)" ng-disabled="counterVar" loading-button="sendActMail" loading-side ="right"><i class="fa fa-check"></i> Resend Activation Email <span ng-if="counterVar">({{counterVar}}s)</span></button>
+        </div>
+    </div>
+</script>
+
+
+
+<script type="text/ng-template" id="permission-error.html">
+    <div class='custom-popover'><b>You need permission.</b><br>Request access from the account owner.</div>
+</script>
+
+<script type="text/ng-template" id="modal-renew-ip">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close()"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Confirmation </h4>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to renew your IP for one year. This action will debit your account.            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="close()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="ok()"><i class="fa fa-check"></i> Yes</button>
+            </div>
+        </div>
+    </script>
+
+
+<script type="text/ng-template" id="modal-add-another-domain">
+<div class="modal-content" id="modal-add-another-domain-test">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="closeModal()"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Sign mails with other domain </h4>
+    </div>
+    <form method="post" name="domainform" novalidate>
+    <div class="modal-body">
+        <div style="display:block;" class="alert alert-danger" ng-show="error_message">
+            <strong>{{error_message}}</strong>
+            <span id="error_msg"></span>
+        </div>
+        <!-- begin .row -->
+        <div class="row">
+            <div class="">
+                <div class="pane pane-default no-margin">
+                    <div class="pane-content no-padding">
+                        <!-- begin .row -->
+                        <div class="row">
+                            <div class="form-group col-sm-12" ng-class="{'has-error': (domainform.new_smtp_domain.$invalid && (dform.$submitted || domainform.new_smtp_domain.$touched))}">
+                                <label class="control-label" for="another-domain-domain-name">Enter the domain name of your choice </label>
+                                <input class="form-control" type="text" required placeholder="Enter your domain name here" ng-pattern="dform.regx" ng-model="new_smtp_domain" ng-blur="putDkimData(domainform)" name="new_smtp_domain" />
+
+                                <div ng-show="domainform.$submitted || domainform.new_smtp_domain.$touched">
+                                    <span class="has-error" ng-show="domainform.new_smtp_domain.$error.pattern">Invalid domain</span>
+                                    <span class="has-error" ng-show="domainform.new_smtp_domain.$error.required">Domain name may not be blank</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12" ng-class="{'has-error': (domainform.dkim_check.$invalid && (dform.$submitted || domainform.dkim_check.$touched))}">
+                                <input type="checkbox" name="dkim_check" required ng-model="dform.confirmCheck" /> I would like to use this domain name to digitally sign my emails (SPF, DKIM, DMARC)                                <a popover-title="Info" popover-trigger="mouseenter" popover-placement="bottom" uib-popover="By default, the technical signature in your email headers will be managed by Sendinblue. Click here for more information. You can use your own authorized domain to sign your emails. Authorize your domain to create new senders linked to this domain without having to verify each email address. E.g. By authorizing 'mydomain.com' you can add new @mydomain.com senders without having to verify each email address." class="badge popover-help">?</a>
+
+                                <div ng-show="domainform.$submitted || domainform.dkim_check.$touched">
+                                    <span class="text-danger" ng-show="domainform.dkim_check.$error.required">Please check the box to select this domain name</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <table class="tbl-DNSmanage table table-striped">
+                            <thead>
+                                <tr>
+                                    <th width="30%"> Host </th>
+                                    <th width="35%"> Data </th>
+                                    <th width="9%"> &nbsp; </th>
+                                    <th width="10%"> Type </th>
+                                    <th width="15%"> Status </th>
+                                 </tr>
+                            </thead>
+                            <tbody>
+                            <tr id="dkim_tr" ng-show="dkim_tr">
+                                <td id="host_second" class="host"> mail._domainkey.{{new_smtp_domain}} </td>
+                                <td class="data"><textarea id ="key_domain_text" style="max-width:170px;" class="form-control" rows="4" cols="12" readonly="readonly">{{dform.data.MAIL_DOMAIN}}</textarea></td>
+                                <td class="btn-copy"><a class="clip_button zeroclipboard-is-hover" ng-click="textCopyToClipboard('#key_domain_text')" title="Copy to Clipboard"><i class="fa fa-copy"></a></td>
+                                <td class="type"> TXT </td>
+                                <td class="status">
+                                    <i id="key_status" class="{{key_status_class}}"></i>
+                                    <a href="javascript:void(0)" data="key" name="refresh_dkim" class="btn btn-default btn-sm" ng-click="putDkimData(domainform)"><i class="fa fa-refresh"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- end .row -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end .row -->
+    </div>
+    </form>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="closeModal()">Cancel</button>
+        <button type="button" class="btn btn-primary" id="btn-associate-domain-save" disabled="disabled" ng-click="saveDataDkim(domainform)"><i class="fa fa-check"></i> Validate and Confirm</button>
+    </div>
+</div>
+
+
+    </script>
+
+<script type="text/ng-template" id="modal-assign-domain">
+   <!-- Modal assign domain -->
+    <div class="modal-content ip-management modal-lg">
+    <div role="tabpanel" id="tab-senders-ips" loading-container="ipDoaminAssociation">
+        <form name="aform" ng-submit="updateDomain(aform)" novalidate>
+        <div class="modal-header" style="padding: 9px 15px;">
+            <button type="button" id="close_header" class="close" data-dismiss="modal" aria-hidden="true" ng-click="closeModal()">×</button>
+            <h3 id="myModalLabel">Associate a Domain</h3>
+        </div>
+
+        <div class="modal-body">
+            <div id="alert_div" style="display:none"><strong>Error</strong><span id="error_msg"></span></div>
+            <div ng-if="assignform.ip.ipValue.contact_created == 0" class="alert alert-danger"><strong>Error</strong> <span id="fix-domain-contact-error_msg" data-support-message="There is a problem with your domain records. Please send an email to <a href='mailto:support@sendinblue.com'>support@sendinblue.com</a> for assistance.">There is a problem with your domain records. Please <a ng-click="fixDomainContact()" href=‘#’>click here</a> to resolve it. <i id="fix-domain-contact-loader" class="fa fa-circle-o-notch fa-spin hide"></i></span></div>
+
+            <div style="margin-bottom: 10px;" class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" style="font-weight: normal; padding: 0;">
+                        <!--  Show radio option only when free_domain_choice is 1 -->
+                        <input type="radio" name="domainChoice" value="1" ng-change="mainChoice('choice1')" ng-model="assignform.domainChoice" ng-value="1" ng-show="(assignform.ip.ipdata.allow_free_domain == 1 || assignform.ip.free_domain_choice == 1) && ( assignform.data.FREE_DOMAIN_CHOICE_BY_UNVALIDATED_DATE == 1 || assignform.data.FREE_DOMAIN_CHOICE == 1 )"  />
+                        <strong ng-show="(assignform.ip.ipdata.allow_free_domain == 1 || assignform.ip.free_domain_choice == 1) && ( assignform.data.FREE_DOMAIN_CHOICE_BY_UNVALIDATED_DATE == 1 || assignform.data.FREE_DOMAIN_CHOICE == 1 )">Option 1</strong> Associate a Domain with the Selected IP                    </h4>
+                </div>
+                <div class="panel-body" id="choice1_panel" style="padding: 30px;" ng-show="assignform.domainChoice == 1">
+                    <label>Domain or Sub-Domain name</label>
+                    <a tabindex="0" uib-tooltip="The domain name should not include 'http://' or 'https://' or 'www'. Also, please note that the word 'sendinblue' should not be used in the domain/subdomain name."  popover-trigger="mouseenter"  class="text-muted" popover-placement="right"><i class="fa fa-info-circle text-muted"></i></a>
+                    <div class="form-group" ng-class="{'has-error': (aform.domain.$invalid && (aform.$submitted || aform.domain.$touched))}">
+                        <input name="domain" class="form-control" style="width: 90%; margin-bottom:5px;" ng-model="assignform.ip.smtp_domain" ng-blur="putdata(assignform.ip.action)" ng-readonly="(assignform.ip.action == 'edit')" required domain-having-sendinblue  ng-pattern="assignform.regx" type="text" placeholder="Enter your domain name here" ng-keypress="putdataOnEnter($event);"/>
+                        <div ng-show="aform.$submitted || aform.domain.$touched">
+                            <span class="has-error text-danger" ng-show="aform.domain.$error.required">Please enter your domain or subdomain</span>
+                            <span class="has-error text-danger" ng-show="aform.domain.$error.pattern||aform.domain.$error.domainSendinblue">Invalid domain</span>
+                        </div>
+                    </div>
+                    <h4 style="margin-top:20px;">Configuration method</h4>
+                    <div class="ip-option-wrap">
+                        <label><input id="changeNS" class="pull-left spacer-right-xxs" type="radio" name="manageDNS" ng-model="assignform.manageDns" ng-change="manageDns()" ng-checked="assignform.manageDns == 1" value="1" /> Delegate your domain or subdomain (recommended) </label>
+                        <div class="IPoption IPoption1" style="font: normal" ng-show="assignform.manageDns == 1">
+                             <div class="sender_popup_box">
+                                <table class="table" style="margin-bottom:0px;">
+                                    <tr>
+                                        <td><strong>Please point your primary DNS and secondary DNS to:</strong></td>
+                                        <td class="text-right">
+                                            <b ng-if="status_class.ns == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured</b>
+                                            <b ng-if="status_class.ns == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.ns == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured</b>
+                                            <b ng-if="status_class.ns == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured</b>
+                                        </td>
+                                        <td class="status">
+                                            <a style="margin-left:5px;" name="refresh" href="javascript:void(0)" data="ns" ng-click="validateDomain('ns')"  class="btn btn-default btn-sm"> <i class="fa fa-refresh"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><span class="domain_cell_2" id="ns1_text">{{assignform.data.NS_DOMAIN1}}</span></td>
+                                        <td class="btn-copy"><a href="javascript:void(0)" ng-click="textCopyToClipboard('#ns1_text')" title="Copy to Clipboard" class="clip_button zeroclipboard-is-hover"><i class="fa fa-files-o"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><span class="domain_cell_2" id="ns2_text">{{assignform.data.NS_DOMAIN2}}</span></td>
+                                        <td class="btn-copy"><a href="javascript:void(0)" ng-click="textCopyToClipboard('#ns2_text')" title="Copy to Clipboard" class="clip_button zeroclipboard-is-hover"><i class="fa fa-files-o"></i></a></td>
+                                    </tr>
+                                </table>
+                                <div class="bold_text">It may take up to 48 hours for DNS changes to fully propagate.</div>
+                           </div>
+
+                            <!--<p>Please point your primary DNS and secondary DNS to:</p>Primary DNS {{assignform.data.NS_DOMAIN1}} <br />Secondary DNS {{assignform.data.NS_DOMAIN2}} <br />
+                            <div class="status-icons">
+                                <i id="ns_status" ng-class="status_class.ns"></i>
+                                <a class="btn btn-default btn-sm" name="refresh" ng-click="validateDomain('ns')" data="ns" href="javascript:void(0)"> <i class="fa fa-refresh"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <center style="margin: 15px 0;"><strong>OR</strong></center>
+                    <div class="ip-option-wrap">
+                        <label class="iow-label">
+                            <div id="manageDNSanchor" name="manageDNSanchor"></div>
+                            <input id="manageDNS" class="pull-left spacer-right-xxs" type="radio" name="manageDNS" ng-model="assignform.manageDns" ng-checked="assignform.ip.user_dns === 1 && assignform.ip.smtp_domain" ng-change="manageDns()" value="2" /> Manage DNS Records (for Experts Only)                        </label>
+                        <div class="IPoption IPoption2" ng-show="assignform.manageDns == 2">
+                            <p></p>
+                            <div class="sender_popup_box">
+                                <table class="table" style="margin-bottom:0px;">
+                                    <tr>
+                                        <td colspan="2"><strong>1. Set CNAME record for "r.{{assignform.ip.smtp_domain}}" to</strong></td>
+                                        <td class="status text-right" id="r_status">
+                                            <b ng-if="status_class.r == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured</b>
+                                            <b ng-if="status_class.r == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.r == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured</b>
+                                            <b ng-if="status_class.r == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured</b>
+                                        </td>
+                                        <td class="text-center"><a href="javascript:void(0)" data="r" ng-click="validateDomain('r')" name="refresh" class="btn btn-default btn-sm"> <i class="fa fa-refresh"></i></a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3"><span class="domain_cell" id="r_domain_text">{{assignform.data.R_DOMAIN}}</span></td>
+                                        <td class="btn-copy">
+                                            <a href="javascript:void(0)" ng-click="textCopyToClipboard('#r_domain_text')" class="clip_button zeroclipboard-is-hover" title="Copy to Clipboard">
+                                                <i class="fa fa-files-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><strong>2. Set CNAME record for "img.{{assignform.ip.smtp_domain}}" to</strong> </td>
+                                        <td class="status text-right" id="img_status">
+                                            <b ng-if="status_class.img == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured</b>
+                                            <b ng-if="status_class.img == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.img == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured</b>
+                                            <b ng-if="status_class.img == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured</b>
+                                        </td>
+                                        <td class="text-center"><a href="javascript:void(0)" data="r" ng-click="validateDomain('img')" name="refresh" class="btn btn-default btn-sm"> <i class="fa fa-refresh"></i></a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3"><span class="domain_cell" id="img_domain_text">{{assignform.data.IMG_DOMAIN}}</span></td>
+                                        <td class="btn-copy">
+                                            <a href="javascript:void(0)" ng-click="textCopyToClipboard('#img_domain_text')" class="clip_button zeroclipboard-is-hover" title="Copy to Clipboard">
+                                                <i class="fa fa-files-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2"><strong>3. Set TXT (DKIM) record for "mail._domainkey.{{assignform.ip.smtp_domain}}" to</strong></td>
+                                        <td class="status text-right" id="key_status">
+                                            <b ng-if="status_class.key == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured</b>
+                                            <b ng-if="status_class.key == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.key == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured</b>
+                                            <b ng-if="status_class.key == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured</b>
+                                        </td>
+                                        <td class="text-center"><a href="javascript:void(0)" class="btn btn-default btn-sm" name="refresh" ng-click="validateDomain('key')" data="key"><i class="fa fa-refresh"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><textarea class="domain_cell" id="key_domain_text" readonly="readonly">{{assignform.data.MAIL_DOMAIN}}</textarea></td>
+                                        <td class="btn-copy">
+                                            <a href="javascript:void(0)" ng-click="textCopyToClipboard('#key_domain_text')" title="Copy to Clipboard" class="clip_button zeroclipboard-is-hover">
+                                                <i class="fa fa-files-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2"><strong>4. Set TXT (SPF) record for "{{assignform.ip.smtp_domain}}" to</strong></td>
+                                        <td class="status text-right" id="spf_status">
+                                            <b ng-if="status_class.spf == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured</b>
+                                            <b ng-if="status_class.spf == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.spf == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured</b>
+                                            <b ng-if="status_class.spf == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured</b>
+                                        </td>
+                                        <td class="text-center"><a href="javascript:void(0)" class="btn btn-default btn-sm" name="refresh" ng-click="validateDomain('spf')" data="spf"><i class="fa fa-refresh"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><span class="domain_cell" id="spf_domain_text">{{assignform.data.IP_SPF}}</span></td>
+                                        <td class="btn-copy">
+                                            <a href="javascript:void(0)" ng-click="textCopyToClipboard('#spf_domain_text')" title="Copy to Clipboard" class="clip_button zeroclipboard-is-hover">
+                                                <i class="fa fa-files-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2"><strong>5. Set A record for "{{assignform.ip.smtp_domain}}" to</strong></td>
+                                        <td class="status text-right" id="ip_status">
+                                            <b ng-if="status_class.ip == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured</b>
+                                            <b ng-if="status_class.ip == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.ip == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured</b>
+                                            <b ng-if="status_class.ip == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured</b>
+                                        </td>
+                                        <td class="text-center"><a href="javascript:void(0)" class="btn btn-default btn-sm" name="refresh" data="ip" ng-click="validateDomain('ip')"><i class="fa fa-refresh"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><span class="domain_cell" id="client_ip">{{assignform.ip.ip}}</span></td>
+                                        <td class="btn-copy">
+                                            <a href="javascript:void(0)" ng-click="textCopyToClipboard('#client_ip')" title="Copy to Clipboard" class="clip_button zeroclipboard-is-hover">
+                                                <i class="fa fa-files-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2"><strong>6. Set MX record for "{{assignform.ip.smtp_domain}}" to</strong></td>
+                                        <td class="status text-right" id="mx_status">
+                                            <b ng-if="status_class.mx == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured</b>
+                                            <b ng-if="status_class.mx == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.mx == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured</b>
+                                            <b ng-if="status_class.mx == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured</b>
+                                        </td>
+                                        <td class="text-center"><a href="javascript:void(0)" class="btn btn-default btn-sm" name="refresh" data="mx" ng-click="validateDomain('mx')"><i class="fa fa-refresh"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><span class="domain_cell" id="client_mx">{{assignform.ip.smtp_domain}}</span></td>
+                                        <td class="btn-copy">
+                                            <a href="javascript:void(0)" ng-click="textCopyToClipboard('#client_mx')" title="Copy to Clipboard" class="clip_button zeroclipboard-is-hover">
+                                                <i class="fa fa-files-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="2"><strong>7. Set TXT (DMARC) record for "_dmarc.{{assignform.ip.smtp_domain}}"</strong>
+                                            <a title="info" popover-title="Info" uib-popover="A DMARC record is recommended but not mandatory. If you know how to manage DMARC settings, feel free to replace our email dmarc@mailinblue.com with your own." class="badge popover-help">?</a>
+                                        </td>
+                                        <td class="status text-right" id="dmarc_status">
+                                            <b ng-if="status_class.dmarc == 'success'" class="text-success"><i class="fa fa-check-circle"></i> Configured (Optional)</b>
+                                            <b ng-if="status_class.dmarc == 'loading'"><i class="fa fa-circle-o-notch fa-spin"></i></b>
+                                            <b ng-if="status_class.dmarc == 'danger'" class="text-danger"><i class="fa fa-times-circle"></i> Not Configured (Optional)</b>
+                                            <b ng-if="status_class.dmarc == 'warning'" class="text-warning"><i class="fa fa-exclamation-triangle"></i> Not Configured (Optional)</b>
+                                        </td>
+                                        <td class="text-center"><a href="javascript:void(0)" class="btn btn-default btn-sm" name="refresh" data="dmarc" ng-click="validateDomain('dmarc')"><i class="fa fa-refresh"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"><span class="domain_cell" id="client_dmarc">{{assignform.data.DMARC}}</span></td>
+                                        <td class="btn-copy">
+                                            <a href="javascript:void(0)" ng-click="textCopyToClipboard('#client_dmarc')" title="Copy to Clipboard" class="clip_button zeroclipboard-is-hover">
+                                                <i class="fa fa-files-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="bold_text">It may take up to 48 hours for DNS changes to fully propagate.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Below div block will be added/shown only when FREE_DOMAIN_CHOICE and allow_free_domain is true -->
+            <div class="panel panel-default" style="margin-bottom: 10px;" ng-show="(assignform.data.FREE_DOMAIN_CHOICE_BY_UNVALIDATED_DATE == 1 && (assignform.ip.ipdata.allow_free_domain == 1 || assignform.ip.free_domain_choice == 1))
+                                                                                    || (assignform.data.FREE_DOMAIN_CHOICE == 1 && (assignform.ip.ipdata.allow_free_domain == 1 || assignform.ip.free_domain_choice == 1) && !angular.isDefined(assignform.ip.smtp_domain) && !angular.isDefined(assignform.ip.ipValue.domain))">
+                <div class="panel-heading">
+                    <h4 style="font-weight: normal; padding: 0;" class="panel-title">
+                        <input type="radio" name="domainChoice" value="2" ng-change="mainChoice('buyDomain')" ng-model="assignform.domainChoice" ng-value="2"  />
+                        <strong>Option 2:</strong>You don't have a domain or you can't access to the DNS configuration                    </h4>
+                </div>
+                <div style="padding: 30px;" class="panel-body" id="choice2_panel" ng-show="assignform.domainChoice == 2">
+                    <div class="ip-option-wrap"><label id="click-focus">Simple association: Get a free (.com) pre configured DNS on desired domain.</label>
+                        <div class="IPoption IPoption3" style="font: normal">
+                            <p>Check and get a new (.com) domain with our DNS. Usually it takes up to 2 mins to complete the process but this time may exceed as per the delay in propogation of WHOIS record.</p>
+                            <div class="row">
+                                <div class="form-group col-md-4" ng-class="{'has-error': (aform.free_domain.$invalid && (aform.$submitted || aform.free_domain.$touched))}">
+                                    <input name="free_domain" ng-model="assignform.ip.ipValue.domain" ng-blur="buyDomain()" ng-readonly="domain_staus.loader || (assignform.ip.ipValue.domain && assignform.ip.ipValue.uid)" required domain-having-sendinblue ng-pattern="/^(?!www\.)([a-z0-9\-]+\.)(com)$/i" class="form-control pull-left" style="width: 250px" type="text" placeholder="Enter your new domain" ng-keypress="buyDomainOnEnter($event)"/>
+                                    <div ng-show="aform.$submitted || aform.free_domain.$touched">
+                                        <span class="has-error" ng-show="aform.free_domain.$error.required">Please enter your domain or subdomain</span>
+                                        <span class="has-error" ng-show="aform.free_domain.$error.pattern||aform.domain.$error.domainSendinblue">Invalid domain</span>
+                                    </div>
+                                </div>
+                                <div class="domain_check_loading"><i ng-class="domain_staus.loader"></i></div>
+                                <div id="domian_status" ng-class="domain_staus.css" class="col-md-4">{{domain_staus.msg}}</div>
+                                <div class="col-md-3" ng-show="domain_staus.save_domain">
+                                    <button id="save_domain" class="btn btn-primary pull-right" ng-click="save_domain()">Confirm</button>
+                                </div>
+                            </div>
+                            <table width="100%" id="buy_domain_records" ng-show="domain_status.buy_domain_records" class="tbl-DNSmanage">
+                                    <thead>
+                                        <tr>
+                                            <td width="10%">Record</td>
+                                            <td width="70%"></td>
+                                            <td width="10%">Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="type">NS</td>
+                                            <td><span id="ns_msg" ng-show="ns_msg">{{ns_msg}}</span></td>
+                                            <td class="status">
+                                            <i id="set_ns_status" ng-class="set_ns_status"></i>
+                                            <a class="btn btn-default btn-sm cf-focus" name="refresh_new" ng-click="validate_buy_domain('set_ns')" data="set_ns" href="javascript:void(0)"> <i class="fa fa-refresh"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="close" class="btn" data-dismiss="modal" aria-hidden="true" ng-click="closeModal()">Close</button>
+            <button id="save" class="btn btn-primary" ng-click="save_data(aform)" ng-disabled="assignform.isButtonDisabled">Validate and Confirm</button>
+        </div>
+        </form>
+    </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="modal-jqplot">
+            <div class="modal-content modal-lg">
+                <div class="modal-header">
+                    <button class="close" aria-hidden="true" data-dismiss="modal" type="button" ng-click="closeModal()">×</button>
+                    <h4 id="myLargeModalLabel" class="modal-title pull-left">Spam report : <spam id="ip_modal"></spam></h4>
+                        <div class="pull-left" style="margin-left:10px; margin-top:3px; line-height:22px;">
+                            <div class="pull-left" style="width:15px;height:15px;background-color: #EE9200; margin-top: 4px;"></div>&nbsp; Orange &nbsp;|
+                        </div>
+                        <div class="pull-left" style="margin-left:10px; margin-top:3px; line-height:22px;">
+                            <div class="pull-left" style="width:15px;height:15px;background-color: #1EAAC9; margin-top: 4px;"></div>&nbsp; SFR
+                        </div>
+                        <div class="pull-left" style="margin-left:10px; margin-top:3px; line-height:22px;">
+                            <div class="pull-left" style="width:15px;height:15px;background-color: #008000; margin-top: 4px;"></div>&nbsp; Laposte
+                        </div>
+                        <div class="clearfix"></div>
+                </div>
+                <div class="modal-body">
+                    <div class="graph2" id="chart1" style="width: auto; height: 400px; position:relative;"></div>
+                </div>
+            </div>
+    </script>
+<link rel="stylesheet" href="https://account.sendinblue.com/public/assets/styles/jquery.jqplot.min.css?v=1618986910" />
+
+</div>
+
+</main>
+
+</div>
+
+<script src="https://account.sendinblue.com/public/assets/js/dependencies/jquery.i18n.properties.js"></script>
+<script src="https://static.sendinblue.com/js/bootstrap.min.js"></script>
+<script src="https://static.sendinblue.com/js/moment.js"></script>
+<script src="https://account.sendinblue.com/public/assets/js/dependencies/xregexp-all.js"></script>
+
+<script>
+            var isReseller = false;
+            var resellerCompany = '';
+            var resellerBtnColor = '';
+            // Set client timezone
+            var client_timezone = 'Europe/Paris';
+            var client_timezone_offset = -120;
+            var default_date_format = 'mm-dd-yyyy';
+            var default_js_date_format = 'MM-DD-YYYY';
+            var default_time_format = 'hh:mm:ss a';
+            var browser_offset = new Date().getTimezoneOffset();
+            $(function(){
+                moment.tz.setDefault(client_timezone);
+            });
+            var CURRENT_LANG = 'en';//'en';
+            var SET_CURRENCY = '3';//'2';
+            var SET_COUNTRY = '214';//'250';
+            var HIGHCHART_DATE_FORMAT = '%m-%d-%Y';
+            var HIGHCHART_DATE_TIME_FORMAT = '%m-%d-%Y %I:%M:%S %P';
+            var CURRENT_ENV = "production";
+            var OFFSET = '-14400';
+            var BERLINOFFSET = '7200';
+            var CONFIG_DATE_FORMAT = 'dd-mm-yyyy';
+            var CONFIG_TIME_FORMAT = '24';
+            var SITE_BASE_URL = "https://account.sendinblue.com/";
+            var access = "1";
+            var MAILIN_URL = "https://my.sendinblue.com/";
+            var CORP_URL = "https://www.sendinblue.com/";
+            var DT_DEFAULT_FORMAT_TIME = "24";
+            var LANG = "en";
+            var BLOCK_TRACKING = parseInt(0);
+            var LANG_FILE_TIMESTAMP = "1618986910";
+            var THOUSAND_SEPARATOR = ",";
+            var DECIMAL_SEPARATOR = ".";
+            var privileges = {"classic_crud":true,"template_crud":true,"contact_view":true,"api":true,"organization_members":true,"reseller_board":true,"chat_access":true};
+        </script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-sanitize.min.js"></script>
+<script src="https://account.sendinblue.com/public/assets/js/dependencies/ui-bootstrap-tpls-0.14.3.js?v=1"></script>
+<script src="https://static.sendinblue.com/js/elements.js"></script>
+<script src="https://account.sendinblue.com/public/assets/js/services/services.js?v=1618986910"></script>
+<script src="https://account.sendinblue.com/public/assets/js/directives/directives.js?v=1618986910"></script>
+<script src="https://account.sendinblue.com/public/assets/js/src/auth.js?v=1618986910"></script>
+<script src="https://account.sendinblue.com/public/assets/js/src/init.js?v=1618986910"></script>
+<script src="https://account.sendinblue.com/public/assets/js/src/elastic-apm-rum.umd.min.js?v=1618986910"></script>
+<script type='text/javascript'>
+            var IP_PER_PAGE = 5;        </script>
+<script type='text/javascript'>
+            elasticApm.init({
+                serviceName: "sendinblue-myaccount",
+                serverUrl: "https://596808a16dec4fc39413bf34b0a70240.apm.eu-west-1.aws.cloud.es.io:443",
+                environment: "production" ,
+                secretToken: "d1C0dSwMozNmNqf7bg"
+            });
+        </script>
+<script type="text/javascript" src="https://account.sendinblue.com/public/assets/js/dependencies/ZeroClipboard.js?v=1618986910"></script>
+<script type="text/javascript" src="https://account.sendinblue.com/public/assets/js/dependencies/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="https://account.sendinblue.com/public/assets/js/dependencies/jqplot.cursor.js"></script>
+<script type="text/javascript" src="https://account.sendinblue.com/public/assets/js/dependencies/jqplot.dateAxisRenderer.js"></script>
+<script type="text/javascript" src="https://account.sendinblue.com/public/assets/js/dependencies/jqplot.highlighter.js"></script>
+<script type="text/javascript" src="https://account.sendinblue.com/public/assets/js/src/senders.js?v=1618986910"></script> 
+<noscript>
+            <div class="message-alert">
+                <div class="alert alert-warning no-margin text-center navbar-fixed-bottom">
+                    <i class="fa fa-exclamation-circle fa-lg"></i> For the Sendinblue platform to work properly, please enable Javascript and/or disable your Adblock if you have one.                </div>
+            </div>
+        </noscript>
+</body>
+</html>
